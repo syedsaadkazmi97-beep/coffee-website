@@ -1,0 +1,99 @@
+
+/* ========== Root variables ========== */
+:root{
+  --bg: #ffffff; /* white background */
+  --panel: #0b0b0b; /* deep black for panels */
+  --muted: #6e0505; /* muted grey */
+  --gold: #d4af37; /* gold accent */
+  --white: #ffffff;
+  --radius: 12px;
+  --container-width: 1200px;
+}
+
+/* ========== Base Reset & Layout ========== */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, 'Poppins', Arial;
+  background:var(--bg);
+  color:var(--panel);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.container{
+  width:95%;
+  max-width:var(--container-width);
+  margin:0 auto;
+}
+
+/* ========== HEADER ========== */
+body {
+    background-image: url(./images/2.jpg);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-attachment: fixed;
+}
+.site-header{
+  background: linear-gradient(180deg, rgba(212,175,55,0.06), rgba(0,0,0,0.00));
+  position:sticky;top:0;z-index:1000;backdrop-filter: blur(6px);
+}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.logo{font-weight:700;font-size:1.25rem;color:var(--panel);text-decoration:none}
+.logo span{color:var(--gold)}
+.main-nav ul{display:flex;gap:22px;list-style:none}
+.main-nav a{text-decoration:none;color:var(--panel);font-weight:500}
+.cta{background:transparent;border:2px solid var(--gold);padding:8px 14px;border-radius:999px;font-weight:600;cursor:pointer}
+
+/* ========== HERO ========== */
+.hero{padding:56px 0;display:flex;align-items:center}
+.hero-inner{display:flex;gap:40px;align-items:center}
+.hero-text h1{font-size:2.1rem;margin-bottom:12px}
+.hero-text h1 span{color:var(--gold)}
+.hero-text p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn.primary{background:var(--panel);color:var(--white)}
+.btn.ghost{border:2px solid var(--panel);color:var(--panel);background:transparent}
+.hero-image{width:280px;height:220px;display:flex;align-items:center;justify-content:center}
+/* decorative cup element */
+.cup{width:160px;height:120px;border-radius:14px;background:linear-gradient(180deg,#fff,#eee);box-shadow:0 10px 20px rgba(0,0,0,0.08);border:6px solid var(--panel)}
+
+/* ========== ABOUT ========== */
+.about{padding:56px 0;background:linear-gradient(180deg, rgba(212,175,55,0.03), rgba(255,255,255,0));}
+.about h2{font-size:1.5rem;margin-bottom:12px}
+.about p{color:var(--muted)}
+
+/* ========== MENU ========== */
+.image{width:80px;}
+.menu h2{font-size:1.5rem;margin-bottom:20px}
+.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.menu-item{background:var(--white);border-radius:12px;padding:18px;box-shadow:0 6px 20px rgba(10,10,10,0.04);position:relative}
+.menu-item h3{margin-bottom:8px}
+.menu-item p{color:var(--muted);margin-bottom:12px}
+.price{position:absolute;right:14px;top:14px;font-weight:700;color:var(--gold)}
+
+/* ========== CONTACT ========== */
+.contact{padding:56px 0}
+.contact-inner{display:flex;gap:30px;align-items:flex-start}
+.contact-info h2{margin-bottom:8px}
+.contact-form{flex:1;display:flex;flex-direction:column;gap:12px}
+.contact-form textarea{width:100%;padding:12px;border-radius:8px;border:1px solid #ddd}
+
+/* ========== FOOTER ========== */
+.site-footer{padding:22px 0;border-top:1px solid rgba(0,0,0,0.06);margin-top:40px}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.brand-small{font-weight:700}
+.brand-small span{color:var(--gold)}
+.site-footer p{color:var(--muted)}
+
+/* ========== Utility ========== */
+h2{color:var(--panel)}
+
+/* Small screens adjustments inline as base (mobile-first) */
+.nav-wrap{gap:12px}
+.main-nav{display:none} /* hide full nav on small screens; responsive.css will handle mobile nav */
+.hero-inner{flex-direction:column;align-items:flex-start}
+.menu-grid{grid-template-columns:1fr}
+.gallery-grid{grid-template-columns:1fr}
+.contact-inner{flex-direction:column}
+
+/* End of style.css */

@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Golden Bean Coffee</title>
+  <!-- Link to main styles -->
+  <link rel="stylesheet" href="./style.css" />
+  <!-- Link to responsive styles -->
+  <link rel="stylesheet" href="./responsive.css" />
+</head>
+<body>
+ 
+  <!-- ========== HEADER (Navigation) ========== -->
+  <header class="site-header">
+    <!-- Logo + navigation -->
+    <div class="container nav-wrap">
+      <a class="logo" href="#">Golden <span>Bean</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="cta">Order</button>
+    </div>
+  </header>
+
+  <!-- ========== HERO / HOME SECTION ========== -->
+  <section id="home" class="hero">
+    <!-- Big hero with tagline and CTA -->
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Welcome to <span>Golden Bean</span></h1>
+        <p>Your daily ritual — perfect coffee, warm vibes, timeless style.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#menu">See Menu</a>
+          <a class="btn ghost" href="#contact">Find Us</a>
+        </div>
+      </div>
+      <div class="hero-image">
+      
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" class="about">
+    <!-- Short blurb about the coffee shop -->
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We source the finest beans and craft every cup with care. Cozy atmosphere, friendly baristas, and a menu full of classics and seasonal treats.</p>
+    </div>
+  </section>
+
+  <!-- ========== MENU SECTION ========== -->
+  <section id="menu" class="menu">
+    <!-- Showcase a few featured drinks / items -->
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="menu-grid">
+        <!-- Each .menu-item is commented for clarity -->
+        <article class="menu-item">
+          <h3>Espresso</h3>
+          <div class="image"><img src="./images/espresso.jpg" alt=""></div>
+          <p>Classic, bold, perfectly pulled.</p>
+          <span class="price">$2.50</span>
+        </article>
+
+        <article class="menu-item">
+          <h3>Flat White</h3>
+          <div class="image"><img src="./images/milky espresso.jpg" alt=""></div>
+          <p>Silky milk, rich espresso.</p>
+
+          <span class="price">$3.50</span>
+        </article>
+
+        <article class="menu-item">
+          <h3>Golden Latte</h3>
+          <div class="image"><img src="./images/golden latte.jpg" alt=""></div>
+          <p>Signature house latte with a hint of spice.</p>
+          <span class="price">$4.00</span>
+        </article>
+
+        <article class="menu-item">
+          <h3>Cold Brew</h3>
+          <div class="image"><img src="./images/cold brew2.jpg" alt=""></div>
+          <p>Smooth and refreshing, slow-steeped.</p>
+          <span class="price">$3.75</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="contact">
+    <!-- Contact info + small form (non-functional static example) -->
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <h2>Contact</h2>
+        <p>123 Brew Lane, Coffee City<br/>Mon - Sun: 7am - 8pm</p>
+        <p>Email: hello@goldenbean.example</p>
+      </div>
+
+      <form class="contact-form" action="#" method="post">
+        <!-- form is static; replace action with backend when ready -->
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="4" placeholder="Say hi!"></textarea>
+        </label>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand-small">Golden <span>Bean</span></div>
+      <p>© <span id="year"></span> Golden Bean — Crafted with love.</p>
+      <div class="socials">
+        <!-- Example social links -->
+        <a href="#"></a>
+        <a href="https://r.search.yahoo.com/_ylt=AwrOu_PcOQZpza0HPstXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1763225308/RO=10/RU=http%3a%2f%2fwww.facebook.com%2flogin.php/RK=2/RS=gwEfQpNoyvUSCHiNPEafnp3kRIU-" target="_blank">Facebook</a>
+
+
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Small script to set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+```
+
+---
